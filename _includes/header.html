@@ -1,0 +1,24 @@
+<header class="header">
+
+	<div class="wrap">
+
+		{% if site.data.settings.header_settings.avatar_image %}
+		<a href="{{ site.baseurl }}/" class="header__avatar">
+			<img src="{{ site.data.settings.header_settings.avatar_image | relative_url }}" class="header__avatar__img">
+		</a>
+		{% endif %}
+
+		<a href="{{ site.baseurl }}/" class="header__title">Tim Grove</a>
+
+		<p class="header_jobtitle">Sr. Software Developement Engineer @ Microsoft</p>
+
+		<div class="header_description">
+			<p class="header__tagline">Dynamic &amp; creative software/web engineer with experience in the tech startup space, digital agency industry and now @ Microsoft</p>
+			<p class="header__tagline">Can be found outdoors camping, fishing the Salish Sea or at a Seattle brewery.</p>
+		</div>
+
+		{% include socials.html %}
+
+	</div>
+
+</header>
